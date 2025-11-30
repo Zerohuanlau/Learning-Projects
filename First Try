@@ -1,0 +1,5 @@
+print("You must be really shit at naming if you are here. This will generate you a new name for your band.")
+born=input("Where are you born in?\n")
+food=input("Ok cool, now what is your favourite food?\n")
+print("Here is your final product, Enjoy!")
+print("The",born+"",food)
