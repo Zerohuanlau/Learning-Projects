@@ -1,0 +1,51 @@
+print(r'''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\ ` . "-._ /_______________|_______
+|                   | |o ;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.")
+path1=input("You have just entered a cave with two doors, where do you want to go? Type left or right ").lower()
+
+if path1 == "left":
+    path2=input("You see two paths, "
+                "The left path is lit with torches and the right one is completely dark,"
+                "Which one do you want to go? Type right or left ").lower()
+    if path2 == "right":
+        path3=input("You see a room with four buttons,"
+                    " Red"
+                    " Blue"
+                    " Green"
+                    " Yellow"
+                    " Which one do you press? ").lower()
+        if   path3 =="yellow":
+            print("Snakes fall from the ceiling and bite you to death, GAME OVER")
+        elif path3 == "red":
+            print("You win!")
+        elif path3 == "blue":
+            print("An automated turret appears out of the floor and shoots you, GAME OVER")
+        else:
+            print("Three bears suddenly teleport in the room and maul you to death, GAME OVER")
+
+    else:
+        print("As you walk down the path, you step on a trip mine and explode, GAME OVER")
+
+else:
+    print("You fall in a hole with spikes, GAME OVER")
